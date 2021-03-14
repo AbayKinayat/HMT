@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
-.header {
+.header,
+.depression,
+.section-if,
+.about-me {
   max-width: 1920px;
   margin: 0 auto;
 }
 
 .header__inner,
-.header__top-inner {
+.header__top-inner,
+.depression__inner,
+.section-if__inner,
+.about-me__inner {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -21,6 +27,17 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.main {
+  background: -o-linear-gradient(213.07deg, #210B62 7.98%, #251553 56.3%);
+  background: linear-gradient(236.93deg, #210B62 7.98%, #251553 56.3%);
+  margin: 0 auto;
+}
+
+.section__title {
+  font-weight: 900;
+  font-size: 40px;
 }
 
 .header {
@@ -231,4 +248,137 @@ ul {
   background: rgba(151, 142, 254, 0.47);
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
+}
+
+.depression {
+  padding: 96px 0 76px 0;
+}
+
+.depression__content_top {
+  max-width: 1379px;
+  margin: 0 auto;
+  margin-top: 62px;
+}
+
+.depression__content_top .depression__symptom-col {
+  max-width: 582px;
+}
+
+.depression__content_bottom {
+  max-width: 1192px;
+  -webkit-transform: translateY(-80px);
+      -ms-transform: translateY(-80px);
+          transform: translateY(-80px);
+  margin: 0 auto;
+}
+
+.depression__content_bottom .depression__symptom-col {
+  max-width: 640px;
+}
+
+.depression__woman-top {
+  width: 583px;
+  height: 821px;
+}
+
+.depression__woman-bottom {
+  width: 342px;
+  height: 797px;
+}
+
+.depression__symptom {
+  margin-top: 45px;
+}
+
+.depression__symptom-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.depression__symptom-subtitle {
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: 12px;
+}
+
+.section-if__woman {
+  width: 428px;
+  height: 565px;
+}
+
+.section-if__content {
+  max-width: 1057px;
+}
+
+.section-if__subtitle {
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 53px;
+}
+
+.about-me {
+  padding: 118px 0;
+}
+
+.about-me__inner {
+  position: relative;
+}
+
+.about-me__btn {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  background: -o-linear-gradient(358.14deg, #6663EA 3.79%, #4947BB 104.45%);
+  background: linear-gradient(91.86deg, #6663EA 3.79%, #4947BB 104.45%);
+  -webkit-box-shadow: 0px 4px 10px rgba(67, 89, 204, 0.5);
+          box-shadow: 0px 4px 10px rgba(67, 89, 204, 0.5);
+  border-radius: 90px;
+  padding: 17px 29px;
+}
+
+.about-me__btn:hover {
+  color: #fff;
+}
+
+.about-me__btn:focus {
+  -webkit-box-shadow: 0px 4px 10px rgba(67, 89, 204, 0.5);
+          box-shadow: 0px 4px 10px rgba(67, 89, 204, 0.5);
+}
+
+.about-me__btn:hover {
+  -webkit-box-shadow: 0px 4px 24px rgba(67, 89, 204, 0.5);
+          box-shadow: 0px 4px 24px rgba(67, 89, 204, 0.5);
+}
+
+.about-me__subtitle {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.about-me__subtitle:first-of-type {
+  max-width: 785px;
+  margin-top: 47px;
+}
+
+.about-me__subtitle:last-of-type {
+  max-width: 640px;
+  margin: 25px 0 40px 0;
+}
+
+.adil {
+  width: 780px;
+  height: 780px;
+}
+
+.certificate {
+  position: absolute;
+  z-index: 5;
+  right: 430px;
+  bottom: -50px;
+  width: 477px;
+  height: 354px;
+  -webkit-box-shadow: 19px 6px 35px 1px rgba(39, 39, 39, 0.25);
+          box-shadow: 19px 6px 35px 1px rgba(39, 39, 39, 0.25);
 }

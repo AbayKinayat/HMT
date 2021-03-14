@@ -7,13 +7,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Holistic Mind Therapy</title>
 </head>
 <body>
   <header id="header" class="header">
   <div class="header__top">
-    <div class="header__top-inner d-flex justify-content-between align-items-center">
+    <div data-aos="fade-down" data-aos-delay="500" class="header__top-inner d-flex justify-content-between align-items-center">
       <div class="logo__box">
         <a href="#header" class="logo">Holistic Mind Therapy</a>
       </div>
@@ -43,7 +44,7 @@
       </nav>
     </div>
   </div>
-  <div class="header__inner container-fluid px-0">
+  <div data-aos="fade-right" class="header__inner container-fluid px-0">
     <h1 class="header__title">
       ИЗБАВЬТЕСЬ ОТ ДЕПРЕСИИ <span>НАВСЕГДА</span>
     </h1>
@@ -59,9 +60,122 @@
   <img src="img/header/cubiks.png" alt="cubic" class="header__cubics">
   <div class="header__line_bottom"></div>
 </header>
+  <main class="main">
+    <section class="depression">
+  <div class="depression__inner container-fluid px-0">
+    <h2 data-aos="fade-right" class="section__title">
+      Симптомы дипрессии
+    </h2>
+    <div class="depression__content_top d-flex justify-content-between align-items-center">
+      <img data-aos="zoom-in-right" src="img/depression/woman.png" alt="Грустная девушка" class="depression__woman-top">
+      <div class="depression__symptom-col">
+        <div data-aos="fade-left" data-aos-delay="100" data-aos-easing="linear" data-aos-duration="600" class="depression__symptom">
+          <h4 class="depression__symptom-title">
+            Подавленное настроение
+          </h4>
+          <p class="depression__symptom-subtitle">
+            К подавленному настроению относятся уныние, печаль, вялость и раздражительность. Будущее кажется мрачным и ничего не значащим. Может значительно увеличиться плаксивость.
+          </p>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="200" data-aos-easing="linear" data-aos-duration="600" class="depression__symptom">
+          <h4 class="depression__symptom-title">
+            Потеря удовольствия
+          </h4>
+          <p class="depression__symptom-subtitle">
+            Дела, которые раньше приносили хорошее настроение, более не удовлетворяют или не интересуют. Из жизни исчезла радость.
+          </p>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="600" class="depression__symptom">
+          <h4 class="depression__symptom-title">
+            Чрезмерная самокритика<br>
+            или необоснованное чувство вины
+          </h4>
+          <p class="depression__symptom-subtitle">
+            Человек чувствует себя виновным и заслуживающим наказания. Чувство вины часто возникает по отношению к таким проблемам, на которые человек сам не в силах повлиять или в которых даже не допускал ошибок.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="depression__content_bottom d-flex justify-content-between align-items-center">
+      <div class="depression__symptom-col">
+        <div data-aos="fade-right" data-aos-delay="100" data-aos-easing="linear" data-aos-duration="600" class="depression__symptom">
+          <h4 class="depression__symptom-title">
+            Повторяющиеся мысли о смерти<br>
+            или самоубийстве, либо же попытки к нему
+          </h4>
+          <p class="depression__symptom-subtitle">
+            У находящегося в депрессии могут возникать мысли о смерти, желание собственной смерти, а также мысли о самоубийстве
+          </p>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="200" data-aos-easing="linear" data-aos-duration="600" class="depression__symptom">
+          <h4 class="depression__symptom-title">
+            Усталость
+          </h4>
+          <p class="depression__symptom-subtitle">
+            Депрессия вызывает потерю инициативности, инерцию и чувство усталости, кажется, что энергии не хватает даже на маленькие дела.
+          </p>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="300" data-aos-easing="linear" data-aos-duration="600" class="depression__symptom">
+          <h4 class="depression__symptom-title col-6">
+            Потеря уверенности в себе или самоуважения
+          </h4>
+          <p class="depression__symptom-subtitle">
+            Характерны мысли о собственной слабости и никчемности, вера в собственный успех очень слаба.
+          </p>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="400" data-aos-easing="linear" data-aos-duration="600" class="depression__symptom">
+          <h4 class="depression__symptom-title">
+            Изменение аппетита и веса
+          </h4>
+          <p class="depression__symptom-subtitle">
+            Аппетит может исчезнуть, а вес снизиться; иногда, наоборот, аппетит и вес могут увеличиваться.
+          </p>
+        </div>
+      </div>
+      <img data-aos="zoom-in-left" src="img/depression/woman-bottom.png" alt="Грустная девушка" class="depression__woman-bottom">
+    </div>
+  </div>
+</section>
+    <section class="section-if">
+  <div class="section-if__inner d-flex justify-content-between align-items-center">
+    <img data-aos="fade-right" data-aos-duration="1000" src="img/section-if/woman.png" alt="Грустная девушка" class="section-if__woman">
+    <div class="section-if__content">
+      <h2 data-aos="fade-left" data-aos-duration="1000" class="section__title">
+        Последствия дипрессии
+      </h2>
+      <p data-aos="fade-left" data-aos-duration="1000" class="section-if__subtitle">
+        При отказе от лечения, последствия депрессии могут быть достаточно тяжелыми. С каждым эпизодом нелеченной депрессии риск возврата заболевания возрастает. Кроме того, каждый следующий эпизод будет протекать тяжелее, с большей потерей работоспособности и негативного влияния на физическое здоровье.<br>
+        <br>
+        Эпизоды будут случаться с увеличивающейся частотой, возможны и случаи затяжной депрессии. Если лечение депрессии было неправильным или неполным, это может привести к развитию формы заболевания, трудно поддающейся лечению. 
+      </p>
+    </div>
+  </div>
+</section>
+    <section class="about-me">
+  <div class="about-me__inner d-flex justify-content-between align-items-center">
+    <div data-aos="fade-right" data-aos-duration="1000" class="about-me__content">
+      <h2 class="section__title">
+        О себе
+      </h2>
+      <p class="about-me__subtitle">
+        Меня зовут Адиль, я сертифицированный специалист по реставрации или обновлению вашей жизни. Почему всё не так, как мы хотим? Наш мозг устроен как компьютер который состоит из разных программ и убеждений которые автоматически запускается каждый день когда мы просыпаемся, следовательно старые или негативные программы не приведут вас к желаемой цели.
+      </p>
+      <p class="about-me__subtitle">
+        Я тот специалист, который полностью обновит вашу платформу подсознания. Мы найдём ваши старые программы, ложные убеждения, по которым сейчас работает ваш мозг, распакуем их, вытащим, и поставим вам новые позитивные установки, которые будут задавать вашему мозгу обновлённые, успешные программы.<br>
+        <br>
+        Ваша жизнь гарантированно изменится! Вы станете уверенным в себе, успешным, финансово-независимым, любимым человеком. Вы начнете притягивать, как магнит, таких же ярких и успешных людей, как сами. Решение остаётся за вами!
+      </p>
+      <button id="btnCta2" type="button" class="about-me__btn btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Записаться на бесплатную консультацию">Бесплатная консультация</button>
+    </div>
+    <img data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800" src="img/about-me/Certificate.png" alt="Сертификат" class="certificate">
+    <img data-aos="fade-left"  src="img/about-me/adil.png" alt="Адиль" class="adil">
+  </div>
+</section>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
