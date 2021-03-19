@@ -7,15 +7,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>Holistic Mind Therapy</title>
 </head>
 <body>
   <header id="header" class="header">
-  <div class="header__top">
-    <div data-aos="fade-down" data-aos-delay="500" class="header__top-inner d-flex justify-content-between align-items-center">
+  <div data-aos="fade-down" data-aos-delay="500" class="header__top">
+    <div  class="header__top-inner d-flex justify-content-between align-items-center">
       <div class="logo__box">
+        <a href="#header" class="mobile-logo">HMT</a>
         <a href="#header" class="logo">Holistic Mind Therapy</a>
       </div>
       <nav class="nav">
@@ -42,9 +45,57 @@
           </a>
         </ul>
       </nav>
+      <div class="burger-nav flex-column justify-content-between align-items-end">
+        <div class="burger-nav__line_top"></div>
+        <div class="burger-nav__line_bottom"></div>
+      </div>
     </div>
   </div>
-  <div data-aos="fade-right" class="header__inner container-fluid px-0">
+  <div class="nav-solid">
+    <ul class="burger-nav__list d-flex flex-column">
+      <a href="#header" class="burger-nav__links">
+        <img src="img/header/home.svg" class="nav-icon">
+        <span class="burger-nav__link">Главная</span>
+      </a>
+      <a href="#about-me" class="burger-nav__links">
+        <img src="img/header/user.svg" class="nav-icon">
+        <span class="burger-nav__link">О себе</span>
+      </a>
+      <a href="#FAQ" class="burger-nav__links">
+        <img src="img/header/help.svg" class="nav-icon">
+        <span class="burger-nav__link">FAQ</span>
+      </a>
+      <a href="#feedback" class="burger-nav__links">
+        <img src="img/header/star.svg" class="nav-icon">
+        <span class="burger-nav__link">Отзывы</span>
+      </a>
+      <a href="#form" class="burger-nav__links">
+        <img src="img/header/contact.svg" class="nav-icon">
+        <span class="burger-nav__link">Контакты</span>
+      </a>
+    </ul>
+    <div class="burger-nav__social-box d-flex flex-column align-items-center">
+      <a target="_blank" href="https://telegram.me/Adil_Zakarin" class="burger-nav__social-item d-flex align-items-center">
+        <img src="img/form/telegram.svg" alt="Телеграм" class="form__social-icon">
+        <span class="burger-nav__social-title">
+          +7 705 448 89 10 
+        </span>
+      </a>
+      <a target="_blank" href="https://www.facebook.com/zakarin.adil" class="burger-nav__social-item d-flex align-items-center">
+        <img src="img/form/facebook.svg" alt="фейсбук" class="form__social-icon">
+        <span class="burger-nav__social-title">
+          zakarin.adil
+        </span>
+      </a>
+      <a target="_blank" href="instagram://user?username=adil_zakarin" class="burger-nav__social-item d-flex align-items-center">
+        <img src="img/form/instagram.svg" alt="Инстаграм" class="form__social-icon">
+        <span class="burger-nav__social-title">
+          adil_zakarin
+        </span>
+      </a>
+    </div>
+  </div>
+  <div data-aos="fade-right" class="header__inner container-fluid">
     <h1 class="header__title">
       ИЗБАВЬТЕСЬ ОТ ДЕПРЕСИИ <span>НАВСЕГДА</span>
     </h1>
@@ -132,7 +183,7 @@
           </p>
         </div>
       </div>
-      <img data-aos="zoom-in-left" src="img/depression/woman-bottom.png" alt="Грустная девушка" class="depression__woman-bottom">
+      <img data-aos="zoom-in-left" src="img/depression/woman-bottom.svg" alt="Грустная девушка" class="depression__woman-bottom">
     </div>
   </div>
 </section>
@@ -151,7 +202,7 @@
     </div>
   </div>
 </section>
-    <section class="about-me">
+    <section id="about-me" class="about-me">
   <div class="about-me__inner d-flex justify-content-between align-items-center">
     <div data-aos="fade-right" data-aos-duration="1000" class="about-me__content">
       <h2 class="section__title">
@@ -168,14 +219,374 @@
       <button id="btnCta2" type="button" class="about-me__btn btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Записаться на бесплатную консультацию">Бесплатная консультация</button>
     </div>
     <img data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800" src="img/about-me/Certificate.png" alt="Сертификат" class="certificate">
-    <img data-aos="fade-left"  src="img/about-me/adil.png" alt="Адиль" class="adil">
+    <img data-aos="fade-left"  src="img/about-me/adil.svg" alt="Адиль" class="adil">
   </div>
 </section>
+    <section id="cards" class="section-cards">
+  <div class="section-cards__inner d-flex justify-content-between">
+    <div class="section-cards__left">
+      <span class="section-cards__title">
+        Во время терапевтических сеансов вы сможете:
+      </span>
+      <div class="section-cards__success d-flex justify-content-between align-items-end">
+        <div class="section-cards__success-arrow"></div>
+        <div class="section-cards__success-col succes-col1"></div>
+        <div class="section-cards__success-col succes-col2"></div>
+        <div class="section-cards__success-col succes-col3"></div>
+        <div class="section-cards__success-col succes-col4"></div>
+        <div class="section-cards__success-col succes-col5"></div>
+      </div>
+    </div>
+    <div class="section-cards__right swiper-container">
+      <div class="swiper-wrapper">
+        <div data-aos="fade-up" data-aos-delay="500"  data-aos-anchor-placement="center-bottom" class="section-cards__card swiper-slide">
+          <div class="section-cards__card_top">
+            <img src="img/section-cards/cards-img1.png" alt="Счастье" class="section-cards__card_image">
+            <div class="section-cards__card_circle">
+              <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+            </div>
+          </div>
+          <div class="section-cards__card_bottom">
+            <span class="section-cards__card_title">
+              Перепрограммировать установки
+            </span>
+            <p class="section-cards__card_subtitle">
+              Заменим старые, негативные установки которые вызывают у вас тревогу, беспокойства, и не давали получить тот желаемый результат и привели вас к такой жизни в которой вы сейчас находитесь, на новые положительные установки которые гарантированно приведут вас к успеху и счастью.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="700"  data-aos-anchor-placement="center-bottom" class="section-cards__card swiper-slide">
+          <div class="section-cards__card_top">
+            <img src="img/section-cards/cards-img2.png" alt="Счастье" class="section-cards__card_image">
+            <div class="section-cards__card_circle">
+              <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+            </div>
+          </div>
+          <div class="section-cards__card_bottom">
+            <span class="section-cards__card_title">
+              Избавиться от страхов
+            </span>
+            <p class="section-cards__card_subtitle">
+              Уберём внутреннее напряжение, деструктивные программы,
+              страхи и комплексы в вашем подсознании, не зависимо от того на сколько она сильна. Страх нельзя убрать в сознании, но возможно убрать в подсознании. После моего сеанса вы сможете стать полностью уверенным и не испытывать никаких страхов которые вас беспокоили.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="900"  data-aos-anchor-placement="center-bottom" class="section-cards__card swiper-slide">
+          <div class="section-cards__card_top">
+            <img src="img/section-cards/cards-img3.png" alt="Счастье" class="section-cards__card_image">
+            <div class="section-cards__card_circle">
+              <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+            </div>
+          </div>
+          <div class="section-cards__card_bottom">
+            <span class="section-cards__card_title">
+              Избавление от обид<br>
+              и негативных эмоции
+            </span>
+            <p class="section-cards__card_subtitle">
+              Проработаем ограничивающие убеждения, обиды, чувство вины. Удалим
+              жалость, которая заставляет вас приносить себя в жертву другим людям. Вы забудете, что такое общественное мнение. Манипуляции с вами прекратятся раз и навсегда!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="guarantee">
+  <div class="guarantee__inner">
+    <h1 class="section__title">
+      Гарантия
+    </h1>
+    <div class="guarantee__content d-flex justify-content-between align-items-end">
+      <div data-aos="zoom-in" class="guarantee__col">
+        <div class="guarantee__col_circle flex-column">
+          <img src="img/guarantee/balance-top.svg" alt="весы">
+          <img class="balance-bottom" src="img/guarantee/balance-bottom.svg" alt="весы">
+        </div>
+        <span class="guarantee__col_title">
+          Ваша ответственность
+        </span>
+        <p class="guarantee__col_subtitle">
+          Обращаю ваше внимание на то, что всю работу мы будем выполнять вместе с вами 50/50. Для вас я являюсь "проводником-помощником" в новую жизнь, но этот путь вы будете проходить сами. Ваша жизнь — это ваш личный, собственный путь. Возьмите за неё ответственность на период нашей с вами работы.
+        </p>
+      </div>
+      <div data-aos="zoom-in" class="guarantee__col align-self-start">
+        <div class="guarantee__col_circle">
+          <img src="img/guarantee/dollar.svg" alt="доллар">
+        </div>
+        <span class="guarantee__col_title">
+          Возврат средств
+        </span>
+        <p class="guarantee__col_subtitle">
+          Если пройдя первый сеанс после оплаты вы почувствуете, что моя программа вам не подходит по любой причине (не нравится, нет времени, передумали и т.д.), я верну вам 100% средств, и мы остаемся друзьями.
+        </p>
+      </div>
+      <div data-aos="zoom-in" class="guarantee__col">
+        <div class="guarantee__col_circle">
+          <img src="img/guarantee/brain.svg" alt="мозг">
+        </div>
+        <span class="guarantee__col_title">
+          Совесть
+        </span>
+        <p class="guarantee__col_subtitle">
+          Если вы получите результат но обманываете что не получили помните, что я работаю с вашей сознательной частью, там находится совесть, которая следит за вами и которая тут же включит "механизм возврата к прошлым проблемам с удвоенной силой". Так что у нас с вами двойная гарантия, которая обеспечивает честность с моей и с вашей стороны.
+        </p>
+      </div>
+      <div class="sword-box">
+        <img src="img/guarantee/sword.png" alt="меч" class="sword1">
+        <img src="img/guarantee/sword2.png" alt="меч" class="sword2">
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="feedback" class="feedback">
+  <div class="feedback__inner">
+    <div class="feedback__content">
+      <h1 class="section__title">
+        Отзывы
+      </h1>
+      <p class="feedback__subtitle">
+        Отзывы людей, прошедших программу "<span>Holistic Mind Therapy</span>"
+      </p>
+      <div class="feedback__nav-btn">
+        <div class="feedback__pagination swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      
+      <a href="https://www.youtube.com/playlist?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE">
+        <button id="btnCta3" type="button" class="feedback-all__btn btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Посмотреть все отзывы на YouTube">
+        Все отзывы
+      </button>
+    </a>
+    </div>
+  </div>
+  <div class="feedback__slider swiper-container">
+    <div class="swiper-wrapper">
+      <iframe class="feedback__slider-video swiper-slide" src="https://www.youtube.com/embed/Ier2uHqfdLs?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="feedback__slider-video swiper-slide" src="https://www.youtube.com/embed/E-CfvWWd8QQ?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="feedback__slider-video swiper-slide" src="https://www.youtube.com/embed/sk6RxU73td4?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="feedback__slider-video swiper-slide" src="https://www.youtube.com/embed/7qipo2nCFO0?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="feedback__slider-video swiper-slide" src="https://www.youtube.com/embed/GflijRc6A38?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="feedback__slider-video swiper-slide" src="https://www.youtube.com/embed/LirkM_TMbSc?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="feedback__gradient"></div>
+</section>
+    <section id="FAQ" class="faq">
+  <div class="faq__inner d-flex justify-content-between">
+    <div class="faq__left">
+      <div class="section__title">
+        FAQ
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item__wrapper">
+          <div class="accordion-icon-container">
+            <div class="accordion-icon-box">
+              <img class="get-money" src="img/faq/get-money.svg" alt="рука помощи">
+            </div>
+          </div>
+          <div class="accordion-item">
+            
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Что я получу после прохождения программы? 
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                В течение нашей работы с вами, вы получите все необходимые инструменты, и мы совершим с вами прорыв в вашей жизни. Вы получите доступ к вашим талантам, способностям, я помогу вам укрепить вашу силу. У вас появится энергия и желание осуществлять все ваши мечты,раскроются ваши творческие возможности, которые принесут вам успех и финансовое удовлетворение. Я ориентируюсь на результат, а не просто на действия.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item__wrapper">
+          <div class="accordion-icon-container">
+            <div class="accordion-icon-box">
+              <img class="brain-icon" src="img/faq/brain.svg" alt="ум">
+  
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Почему я не смогу это сделать сам?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Мы будем работать по самым передовым и многократно проверенным методикам изменения ваших установок, внутренних программ и шаблонов поведения. То, что вы делали до этого — вы работали с сознанием, но ваши проблемы находятся глубоко в подсознании и усиливаются. В своей работе я использую уникальные методики которые гарантированно и очень быстро изменят вашу жизнь. Вся наша с вами работа может успешно пройти дистанционно, онлайн по видеосвязи 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item__wrapper">
+          <div class="accordion-icon-container">
+            <div class="accordion-icon-box">
+              <img class="graph-icon" src="img/faq/graph.svg" alt="график">
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Как быстро придёт результат?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Мы можем с вами проработать все тормозящие аспекты за один или несколько терапевтических сеансов, и вы почувствуете изменения в вашей жизни уже через месяц или ранее, всё зависит от глубины повреждающих установок. Связь со мной для возможных корректировок сохраняется у вас два месяца.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq__right d-flex justify-content-between align-items-center ">
+      <div class="faq__question-box">
+        <span class="faq__question">Если остались вопросы</span>
+        <span class="faq__advice">Можете их написать, мы вам ответим.</span>
+      </div>
+      <div class="faq__adil-box">
+        <img src="img/faq/adil-phone.png" alt="Адиль Закарин" class="faq__adil">
+        <a href="#form" class="way-to-form_circle">  
+          <img src="img/faq/arrow.svg" alt="Стрелка к форме" class="way-to-form_array">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <div id="form" class="section section-form">
+  <div class="section-form__inner">
+    <div class="form__wrapper">
+      <form class="form" novalidate>
+        <span class="form__title">
+          Свяжитесь с нами!
+        </span>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="userName" placeholder="Ваше имя" name="userName">
+          <label for="userName">Ваше имя</label>
+          <div id="nameFeedback" class="invalid-feedback"></div>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="userPhone" placeholder="Ваш номер телефона" name="userPhone">
+          <label for="userPhone">Ваш номер телефона</label>
+          <div id="phoneFeedback" class="invalid-feedback"></div>
+        </div>
+        <div class="form-floating">
+          <input type="email" class="form-control" id="userEmail" placeholder="Ваша электронная почта" name="userEmail">
+          <label for="userEmail">Ваша электронная почта</label>
+          <div id="emailFeedback" class="invalid-feedback"></div>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Укажите вашу проблему" id="userMessage" name="userMessage"></textarea>
+          <label for="userMessage">Укажите вашу проблему</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="agree">
+          <label class="form-check-label" for="agree">
+            Я согласен с политикой конфиденциальности
+          </label>
+        </div>
+        <button type="submit" class="btn form__btn">Записаться</button>
+      </form>
+      <div class="form__contact">
+        <img src="img/form/form-bg.jpg" alt="Путь" class="form__contact_bg">
+        <div class="form__contact_gradient"></div>
+        <div class="form__contact-content">
+          <span class="form__contact-title">
+            Контактная информация
+          </span>
+          <span class="form__contact-subtitle">
+            Мы вам обязательно ответим в течение часа! 
+          </span>
+          <div class="form-steps">
+            <div class="form-step d-flex align-items-center">
+              <div class="form-step__box">
+                01
+                <div class="form-step_anim"></div>
+              </div>
+              <div class="form-step__title-box">
+                <span class="form-step__count">
+                  1 шаг
+                </span>
+                <span class="form-step__title">
+                  Записаться на консультацию 
+                </span>
+              </div>
+            </div>
+            <div class="form-steps__line-box">
+              <div class="form-steps__vertical-line">
+
+              </div>
+            </div>
+            <div class="form-step d-flex align-items-center">
+              <div class="form-step__box">
+                02
+              </div>
+              <div class="form-step__title-box">
+                <span class="form-step__count">
+                  2 шаг
+                </span>
+                <span class="form-step__title">
+                  Пройти консультацию 
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="form__social-box d-flex flex-column">
+            <a target="_blank" href="https://telegram.me/Adil_Zakarin" class="form__social-item d-flex align-items-center">
+              <img src="img/form/telegram.svg" alt="Телеграм" class="form__social-icon">
+              <span class="form__social-title">
+                +7 705 448 89 10 
+              </span>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/zakarin.adil" class="form__social-item d-flex align-items-center">
+              <img src="img/form/facebook.svg" alt="фейсбук" class="form__social-icon">
+              <span class="form__social-title">
+                zakarin.adil
+              </span>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/adil_zakarin/" class="form__social-item d-flex align-items-center">
+              <img src="img/form/instagram.svg" alt="Инстаграм" class="form__social-icon">
+              <span class="form__social-title">
+                adil_zakarin
+              </span>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 100">
+      <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img class="adil-message-img" src="img/form/adil-message.png" alt="Адиль">
+          <strong class="adil-message-title me-auto">Zakarin Adil</strong>
+          <small class="adil-message-time">1 sec ago</small>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Привет! Вы большой молодец. Вы сделали <strong>первый шаг</strong> к изменении своей жизни. Теперь <strong>Вторым шагом</strong> будет моя консультация. Я напишу вам в течении часа
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
   </main>
+  <footer class="footer">
+  <div class="footer__inner d-flex justify-content-between">
+    <span class="footer__right">© 2021. Adil-Zakarin.online. Все права защищены.</span>
+    <a href="#" class="footer__politics">Политика конфиденциальности</a>
+  </div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
