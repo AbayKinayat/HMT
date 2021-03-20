@@ -178,6 +178,12 @@ function accordionBoxShadowTaker(accarWrapper, accarBody) {
   }, 400)
 }
 
+const burgerMenu = document.querySelector(".burger-nav");
+const navSolid = document.querySelector(".nav-solid");
+
+burgerMenu.addEventListener('click', function() {
+  navSolid.classList.toggle('nav-active');
+})
 
 
 const form = document.querySelector(".form");

@@ -71,7 +71,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 101;
   width: 100vw;
   -webkit-transition: .5s;
   -o-transition: .5s;
@@ -88,6 +88,7 @@ ul {
   display: none;
   width: 24px;
   height: 10px;
+  cursor: pointer;
 }
 
 .burger-nav__line_top {
@@ -111,8 +112,20 @@ ul {
   width: 370px;
   height: 100vh;
   z-index: 100;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
   background-color: #221645;
   padding-top: 10vh;
+}
+
+.nav-active {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .burger-nav__links {
