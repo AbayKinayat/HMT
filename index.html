@@ -14,6 +14,7 @@
   <title>Holistic Mind Therapy</title>
 </head>
 <body>
+  <div class="certificate-zoom__overlay"></div>
   <header id="header" class="header">
   <div data-aos="fade-down" data-aos-delay="500" class="header__top">
     <div  class="header__top-inner d-flex justify-content-between align-items-center">
@@ -306,7 +307,9 @@
       <p class="about-me__subtitle">
         Меня зовут Адиль, я сертифицированный специалист по реставрации или обновлению вашей жизни. Почему всё не так, как мы хотим? Наш мозг устроен как компьютер который состоит из разных программ и убеждений которые автоматически запускается каждый день когда мы просыпаемся, следовательно старые или негативные программы не приведут вас к желаемой цели.
       </p>
-      <img src="img/about-me/Certificate.png" alt="Сертификат" class="certificate-mobile">
+      <div class="certificate-mobile__box">
+        <img src="img/about-me/certificate.png" alt="Сертификат" class="certificate-mobile">
+      </div>
       <p class="about-me__subtitle">
         Я тот специалист, который полностью обновит вашу платформу подсознания. Мы найдём ваши старые программы, ложные убеждения, по которым сейчас работает ваш мозг, распакуем их, вытащим, и поставим вам новые позитивные установки, которые будут задавать вашему мозгу обновлённые, успешные программы.<br>
         <br>
@@ -316,10 +319,32 @@
         <button id="btnCta2" type="button" class="about-me__btn btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Записаться на бесплатную консультацию">Бесплатная консультация</button>
       </a>
     </div>
-    <img data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800" src="img/about-me/Certificate.png" alt="Сертификат" class="certificate">
+    <div class="certificate-box">
+      <img data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800" src="img/about-me/Certificate.png" alt="Сертификат" class="certificate">
+    </div>
     <img data-aos="fade-left"  src="img/about-me/adil.svg" alt="Адиль" class="adil">
   </div>
 </section>
+<div class="certificate-zoom__wrapper">
+  <div class="certificate-zoom__close-zone"></div>
+  <img src="img/about-me/certificate-zoom.png" alt="Сертификат" class="certificate-zoom">
+  <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+  <a href="#certificateTranslate">
+    <button class="btn btn-success">Читать на русском</button>
+  </a>
+  <div id="certificateTranslate" class="certificate-zoom__translate">
+    <span class="certificate-zoom__translate-title">
+      Ассоциация холистической психотерапии
+    </span>
+    <p class="certificate-zoom__subtitle">
+      Настоящим удостоверяется, что Закарин Адиль, успешно завершивший необходимые исследования, был признан Советом директоров обладающим квалификацией, требуемой Уставом, и настоящим зарегистрирован в качестве <span>практикующего специалиста по холистической психотерапии.</span>
+    </p>
+    <p class="certificate-zoom__subtitle">
+      В подтверждение этого подпись администратора ставится <span>20-05-2020</span> (Дата).
+    </p>
+  </div>
+</div>
+
     <section id="cards" class="section-cards">
   <div class="section-cards__inner d-flex justify-content-between">
     <div class="section-cards__left">
@@ -695,7 +720,7 @@
   <footer class="footer">
   <div class="footer__inner row justify-content-between">
     <span class="footer__right col-auto">© 2021. Adil-Zakarin.online. Все права защищены.</span>
-    <a href="#" class="footer__politics col-auto">Политика конфиденциальности</a>
+    <a href="privacy.html" class="footer__politics col-auto">Политика конфиденциальности</a>
   </div>
 </footer>
 

@@ -205,7 +205,7 @@ function accordionBoxShadowTaker(accarWrapper, accarBody) {
   setTimeout(() => {
     if (accarBody.classList.contains('show')) {
       accarWrapper.style.boxShadow = '10px 10px 20px 4px rgba(0, 0, 0, 0.25)';
-      accarWrapper.style.zIndex = '100';
+      accarWrapper.style.zIndex = '98';
       accarWrapper.style.transform = 'translate(-5px, -5px)';
     } else {
       accarWrapper.style.boxShadow = 'none';
@@ -232,6 +232,35 @@ burgerNavLinks.forEach(function(link) {
     navSolid.classList.remove('active');
   })
 })
+
+// Certificate Zoom
+
+const certificate = document.querySelector(".certificate");
+const certificateMobile = document.querySelector(".certificate-mobile");
+const certificateZoom = document.querySelector(".certificate-zoom__wrapper");
+const  certificateCloseBtn = document.querySelector(".certificate-zoom__wrapper .btn-close");
+const certificateOverlay = document.querySelector(".certificate-zoom__overlay");
+const certificateCloseZone = document.querySelector(".certificate-zoom__close-zone");
+
+certificateMobile.addEventListener('click', certificateZoomIn)
+
+certificate.addEventListener('click', certificateZoomIn)
+
+certificateCloseBtn.addEventListener('click', certificateZoomOut)
+
+certificateCloseZone.addEventListener('click', certificateZoomOut)
+
+function certificateZoomIn() {
+  certificateZoom.classList.add('active');
+  certificateOverlay.style.visibility = "visible";
+  certificateOverlay.style.opacity = "0.5";
+}
+
+function certificateZoomOut() {
+  certificateZoom.classList.remove('active');
+  certificateOverlay.style.visibility = "hidden";
+  certificateOverlay.style.opacity = "0";
+}
 
 // Form Validation and Post PHP
 
@@ -327,9 +356,24 @@ form.addEventListener('submit', function(event) {
 
   toastSuccess.show()
 
-  formInputs.forEach(input => {
-    input.value = "";
+  
+
+  $.ajax({
+    url: 'telegram.php',
+    type: 'POST',
+    cache: false,
+    data: {'userName': userName,'userPhone': userPhone, 'userEmail': userEmail,'userMessage': userMessage},
+    dataType: 'html',
+    success: function(data) {
+        console.log('success')
+    }
   })
+
+  setTimeout(() => {
+    formInputs.forEach(input => {
+      input.value = "";
+    })
+  }, 3000)
 })
 
 
