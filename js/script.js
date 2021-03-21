@@ -50,6 +50,25 @@ AOS.init({
 var sectionCardSlider = new Swiper('.section-cards__right', {
   slidesPerView: 3,
   spaceBetween: 30,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    },
+    1300: {
+      slidesPerView: 2,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    },
+    1650: {
+      slidesPerView: 3,
+    }
+  }
 });
 
 var feedbackSlider = new Swiper('.feedback__slider', {
@@ -57,13 +76,33 @@ var feedbackSlider = new Swiper('.feedback__slider', {
   spaceBetween: 30,
   mousewheel: true,
   pagination: {
-    el: '.feedback__pagination',
+    el: '.dekstop-pagination',
     clickable: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    0: {
+      pagination: {
+        el: '.mobile-pagination',
+        clickable: true,
+      }
+    },
+    551: {
+      pagination: {
+        el: '.dekstop-pagination',
+        clickable: true,
+      }
+    },
+    1920: {
+      pagination: {
+        el: '.dekstop-pagination',
+        clickable: true,
+      }
+    }
+  }
 });
 
 // cards and guarantee animation
@@ -147,8 +186,6 @@ if (window.addEventListener) {
 const accordionItemWrapper = document.querySelectorAll('.accordion-item__wrapper');
 const accordionBody = document.querySelectorAll('.accordion-item__wrapper .accordion-item .collapse');
 
-console.log(accordionItemWrapper[1],accordionBody[1])
-
 accordionItemWrapper[0].addEventListener('click', function() {
   accordionBoxShadowTaker(this, accordionBody[0])
 })
@@ -178,13 +215,25 @@ function accordionBoxShadowTaker(accarWrapper, accarBody) {
   }, 400)
 }
 
-const burgerMenu = document.querySelector(".burger-nav");
-const navSolid = document.querySelector(".nav-solid");
+// BURGER NAV
 
-burgerMenu.addEventListener('click', function() {
-  navSolid.classList.toggle('nav-active');
+const burgerNav = document.querySelector(".burger-nav");
+const navSolid = document.querySelector(".nav-solid");
+const burgerNavLinks = document.querySelectorAll(".burger-nav__links");
+
+burgerNav.addEventListener('click', burgerNavToggle)
+
+function burgerNavToggle() {
+  navSolid.classList.toggle('active');
+}
+
+burgerNavLinks.forEach(function(link) {
+  link.addEventListener('click', function() {
+    navSolid.classList.remove('active');
+  })
 })
 
+// Form Validation and Post PHP
 
 const form = document.querySelector(".form");
 const formStepBox = document.querySelector(".form-step__box");
@@ -281,8 +330,6 @@ form.addEventListener('submit', function(event) {
   formInputs.forEach(input => {
     input.value = "";
   })
-
-  console.log('is-validation: ', form)
 })
 
 

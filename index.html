@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
@@ -103,7 +103,9 @@
       Авторская программа "Holistic Mind Therapy" за 8 недель избавит вас от депрессии, тревог, беспокойств и страдании.
       Поможет вам обрести радость, душевное спокойствие, здоровье и новую жизнь.
     </p>
-    <button id="btnCta" type="button" class="header__btn btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Записаться на бесплатную консультацию">Бесплатная консультация</button>
+    <a href="#form">
+      <button id="btnCta" type="button" class="header__btn btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Записаться на бесплатную консультацию">Бесплатная консультация</button>
+    </a>
   </div>
   <div class="header__woman-container">
     <img src="img/header/woman.png" alt="woman" class="header__woman">
@@ -117,6 +119,98 @@
     <h2 data-aos="fade-right" class="section__title">
       Симптомы дипрессии
     </h2>
+    <p class="depression__subtitle_mobile">
+      Ниже описаны симптомы депрессии. На основании тяжести симптомов депрессию классифицируют как легкую, средней тяжести и тяжелую. 
+    </p>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="DepressionHeadingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#depressionCollapseOne" aria-expanded="true" aria-controls="depressionCollapseOne">
+        Подавленное настроение
+      </button>
+    </h2>
+    <div id="depressionCollapseOne" class="accordion-collapse collapse show" aria-labelledby="DepressionHeadingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        К подавленному настроению относятся уныние, печаль, вялость и раздражительность. Будущее кажется мрачным и ничего не значащим. Может значительно увеличиться плаксивость.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="DepressionHeadingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#depressionCollapseTwo" aria-expanded="false" aria-controls="depressionCollapseTwo">
+        Потеря удовольствия
+      </button>
+    </h2>
+    <div id="depressionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="DepressionHeadingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Дела, которые раньше приносили хорошее настроение, более не удовлетворяют или не интересуют. Из жизни исчезла радость.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="DepressionHeadingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#depressionCollapseThree" aria-expanded="false" aria-controls="depressionCollapseThree">
+        Чрезмерная самокритика<br>
+        или необоснованное чувство вины
+      </button>
+    </h2>
+    <div id="depressionCollapseThree" class="accordion-collapse collapse" aria-labelledby="DepressionHeadingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Человек чувствует себя виновным и заслуживающим наказания. Чувство вины часто возникает по отношению к таким проблемам, на которые человек сам не в силах повлиять или в которых даже не допускал ошибок.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="DepressionHeadingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#depressionCollapseFour" aria-expanded="false" aria-controls="depressionCollapseFour">
+        Повторяющиеся мысли о смерти 
+        или самоубийстве, либо же попытки
+        к нему
+      </button>
+    </h2>
+    <div id="depressionCollapseFour" class="accordion-collapse collapse" aria-labelledby="depressionCollapseFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        У находящегося в депрессии могут возникать мысли о смерти, желание собственной смерти, а также мысли о самоубийстве.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="DepressionHeadingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#depressionCollapseFive" aria-expanded="false" aria-controls="depressionCollapseFive">
+        Усталость
+      </button>
+    </h2>
+    <div id="depressionCollapseFive" class="accordion-collapse collapse" aria-labelledby="depressionCollapseFive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Депрессия вызывает потерю инициативности, инерцию и чувство усталости, кажется, что энергии не хватает даже на маленькие дела.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="DepressionHeadingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#depressionCollapseSix" aria-expanded="false" aria-controls="depressionCollapseSix">
+        Потеря уверенности в себе или самоуважения
+      </button>
+    </h2>
+    <div id="depressionCollapseSix" class="accordion-collapse collapse" aria-labelledby="depressionCollapseSix" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Характерны мысли о собственной слабости и никчемности, вера в собственный успех очень слаба.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="DepressionHeadingSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#depressionCollapseSeven" aria-expanded="false" aria-controls="depressionCollapseSix">
+        Изменение аппетита и веса
+      </button>
+    </h2>
+    <div id="depressionCollapseSeven" class="accordion-collapse collapse" aria-labelledby="depressionCollapseSeven" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Аппетит может исчезнуть, а вес снизиться; иногда, наоборот, аппетит и вес могут увеличиваться.
+      </div>
+    </div>
+  </div>
+</div>
     <div class="depression__content_top d-flex justify-content-between align-items-center">
       <img data-aos="zoom-in-right" src="img/depression/woman.png" alt="Грустная девушка" class="depression__woman-top">
       <div class="depression__symptom-col">
@@ -208,15 +302,19 @@
       <h2 class="section__title">
         О себе
       </h2>
+      <img src="img/about-me/adil.svg" alt="Адиль" class="adil-mobile">
       <p class="about-me__subtitle">
         Меня зовут Адиль, я сертифицированный специалист по реставрации или обновлению вашей жизни. Почему всё не так, как мы хотим? Наш мозг устроен как компьютер который состоит из разных программ и убеждений которые автоматически запускается каждый день когда мы просыпаемся, следовательно старые или негативные программы не приведут вас к желаемой цели.
       </p>
+      <img src="img/about-me/Certificate.png" alt="Сертификат" class="certificate-mobile">
       <p class="about-me__subtitle">
         Я тот специалист, который полностью обновит вашу платформу подсознания. Мы найдём ваши старые программы, ложные убеждения, по которым сейчас работает ваш мозг, распакуем их, вытащим, и поставим вам новые позитивные установки, которые будут задавать вашему мозгу обновлённые, успешные программы.<br>
         <br>
         Ваша жизнь гарантированно изменится! Вы станете уверенным в себе, успешным, финансово-независимым, любимым человеком. Вы начнете притягивать, как магнит, таких же ярких и успешных людей, как сами. Решение остаётся за вами!
       </p>
-      <button id="btnCta2" type="button" class="about-me__btn btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Записаться на бесплатную консультацию">Бесплатная консультация</button>
+      <a href="#form">
+        <button id="btnCta2" type="button" class="about-me__btn btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Записаться на бесплатную консультацию">Бесплатная консультация</button>
+      </a>
     </div>
     <img data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800" src="img/about-me/Certificate.png" alt="Сертификат" class="certificate">
     <img data-aos="fade-left"  src="img/about-me/adil.svg" alt="Адиль" class="adil">
@@ -239,58 +337,65 @@
     </div>
     <div class="section-cards__right swiper-container">
       <div class="swiper-wrapper">
-        <div data-aos="fade-up" data-aos-delay="500"  data-aos-anchor-placement="center-bottom" class="section-cards__card swiper-slide">
-          <div class="section-cards__card_top">
-            <img src="img/section-cards/cards-img1.png" alt="Счастье" class="section-cards__card_image">
-            <div class="section-cards__card_circle">
-              <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+        <div class="swiper-slide d-flex justify-content-center">
+          <div data-aos="fade-up" data-aos-delay="500"  data-aos-anchor-placement="center-bottom" class="section-cards__card">
+            <div class="section-cards__card_top">
+              <img src="img/section-cards/cards-img1.png" alt="Счастье" class="section-cards__card_image">
+              <a href="#form" class="section-cards__card_circle">
+                <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+              </a>
             </div>
-          </div>
-          <div class="section-cards__card_bottom">
-            <span class="section-cards__card_title">
-              Перепрограммировать установки
-            </span>
-            <p class="section-cards__card_subtitle">
-              Заменим старые, негативные установки которые вызывают у вас тревогу, беспокойства, и не давали получить тот желаемый результат и привели вас к такой жизни в которой вы сейчас находитесь, на новые положительные установки которые гарантированно приведут вас к успеху и счастью.
-            </p>
+            <div class="section-cards__card_bottom">
+              <span class="section-cards__card_title">
+                Перепрограммировать установки
+              </span>
+              <p class="section-cards__card_subtitle">
+                Заменим старые, негативные установки которые вызывают у вас тревогу, беспокойства, и не давали получить тот желаемый результат и привели вас к такой жизни в которой вы сейчас находитесь, на новые положительные установки которые гарантированно приведут вас к успеху и счастью.
+              </p>
+            </div>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-delay="700"  data-aos-anchor-placement="center-bottom" class="section-cards__card swiper-slide">
-          <div class="section-cards__card_top">
-            <img src="img/section-cards/cards-img2.png" alt="Счастье" class="section-cards__card_image">
-            <div class="section-cards__card_circle">
-              <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+        <div class="swiper-slide d-flex justify-content-center">
+          <div data-aos="fade-up" data-aos-delay="700"  data-aos-anchor-placement="center-bottom" class="section-cards__card">
+            <div class="section-cards__card_top">
+              <img src="img/section-cards/cards-img2.png" alt="Счастье" class="section-cards__card_image">
+              <a href="#form" class="section-cards__card_circle">
+                <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+              </a>
             </div>
-          </div>
-          <div class="section-cards__card_bottom">
-            <span class="section-cards__card_title">
-              Избавиться от страхов
-            </span>
-            <p class="section-cards__card_subtitle">
-              Уберём внутреннее напряжение, деструктивные программы,
-              страхи и комплексы в вашем подсознании, не зависимо от того на сколько она сильна. Страх нельзя убрать в сознании, но возможно убрать в подсознании. После моего сеанса вы сможете стать полностью уверенным и не испытывать никаких страхов которые вас беспокоили.
-            </p>
+            <div class="section-cards__card_bottom">
+              <span class="section-cards__card_title">
+                Избавиться от страхов
+              </span>
+              <p class="section-cards__card_subtitle">
+                Уберём внутреннее напряжение, деструктивные программы,
+                страхи и комплексы в вашем подсознании, не зависимо от того на сколько она сильна. Страх нельзя убрать в сознании, но возможно убрать в подсознании. После моего сеанса вы сможете стать полностью уверенным и не испытывать никаких страхов которые вас беспокоили.
+              </p>
+            </div>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-delay="900"  data-aos-anchor-placement="center-bottom" class="section-cards__card swiper-slide">
-          <div class="section-cards__card_top">
-            <img src="img/section-cards/cards-img3.png" alt="Счастье" class="section-cards__card_image">
-            <div class="section-cards__card_circle">
-              <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+        <div class="swiper-slide d-flex justify-content-center">
+          <div data-aos="fade-up" data-aos-delay="900"  data-aos-anchor-placement="center-bottom" class="section-cards__card">
+            <div class="section-cards__card_top">
+              <img src="img/section-cards/cards-img3.png" alt="Счастье" class="section-cards__card_image">
+              <a href="#form" class="section-cards__card_circle">
+                <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+              </a>
             </div>
-          </div>
-          <div class="section-cards__card_bottom">
-            <span class="section-cards__card_title">
-              Избавление от обид<br>
-              и негативных эмоции
-            </span>
-            <p class="section-cards__card_subtitle">
-              Проработаем ограничивающие убеждения, обиды, чувство вины. Удалим
-              жалость, которая заставляет вас приносить себя в жертву другим людям. Вы забудете, что такое общественное мнение. Манипуляции с вами прекратятся раз и навсегда!
-            </p>
+            <div class="section-cards__card_bottom">
+              <span class="section-cards__card_title">
+                Избавление от обид<br>
+                и негативных эмоции
+              </span>
+              <p class="section-cards__card_subtitle">
+                Проработаем ограничивающие убеждения, обиды, чувство вины. Удалим
+                жалость, которая заставляет вас приносить себя в жертву другим людям. Вы забудете, что такое общественное мнение. Манипуляции с вами прекратятся раз и навсегда!
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
@@ -351,7 +456,7 @@
         Отзывы людей, прошедших программу "<span>Holistic Mind Therapy</span>"
       </p>
       <div class="feedback__nav-btn">
-        <div class="feedback__pagination swiper-pagination"></div>
+        <div class="feedback__pagination swiper-pagination dekstop-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
@@ -360,7 +465,7 @@
         <button id="btnCta3" type="button" class="feedback-all__btn btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Посмотреть все отзывы на YouTube">
         Все отзывы
       </button>
-    </a>
+      </a>
     </div>
   </div>
   <div class="feedback__slider swiper-container">
@@ -373,7 +478,18 @@
       <iframe class="feedback__slider-video swiper-slide" src="https://www.youtube.com/embed/LirkM_TMbSc?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
-  <div class="feedback__gradient"></div>
+  <div class="feedback-mobile__content">
+    <div class="feedback__nav-btn">
+      <div class="feedback__pagination swiper-pagination mobile-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <a href="https://www.youtube.com/playlist?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE">
+      <button id="btnCta3" type="button" class="feedback-all__btn btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Посмотреть все отзывы на YouTube">
+      Все отзывы
+    </button>
+    </a>
+  </div>
 </section>
     <section id="FAQ" class="faq">
   <div class="faq__inner d-flex justify-content-between">
@@ -381,7 +497,7 @@
       <div class="section__title">
         FAQ
       </div>
-      <div class="accordion" id="accordionExample">
+      <div class="accordion" id="FaqAccordionExample">
         <div class="accordion-item__wrapper">
           <div class="accordion-icon-container">
             <div class="accordion-icon-box">
@@ -390,12 +506,12 @@
           </div>
           <div class="accordion-item">
             
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <h2 class="accordion-header" id="FaqHeadingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#FaqCollapseOne" aria-expanded="false" aria-controls="FaqCollapseOne">
                 Что я получу после прохождения программы? 
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="FaqCollapseOne" class="accordion-collapse collapse" aria-labelledby="FaqHeadingOne" data-bs-parent="#FaqAccordionExample">
               <div class="accordion-body">
                 В течение нашей работы с вами, вы получите все необходимые инструменты, и мы совершим с вами прорыв в вашей жизни. Вы получите доступ к вашим талантам, способностям, я помогу вам укрепить вашу силу. У вас появится энергия и желание осуществлять все ваши мечты,раскроются ваши творческие возможности, которые принесут вам успех и финансовое удовлетворение. Я ориентируюсь на результат, а не просто на действия.
               </div>
@@ -410,12 +526,12 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h2 class="accordion-header" id="FaqHeadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#FaqCollapseTwo" aria-expanded="false" aria-controls="FaqCollapseTwo">
                 Почему я не смогу это сделать сам?
               </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div id="FaqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="FaqHeadingTwo" data-bs-parent="#FaqAccordionExample">
               <div class="accordion-body">
                 Мы будем работать по самым передовым и многократно проверенным методикам изменения ваших установок, внутренних программ и шаблонов поведения. То, что вы делали до этого — вы работали с сознанием, но ваши проблемы находятся глубоко в подсознании и усиливаются. В своей работе я использую уникальные методики которые гарантированно и очень быстро изменят вашу жизнь. Вся наша с вами работа может успешно пройти дистанционно, онлайн по видеосвязи 
               </div>
@@ -429,12 +545,12 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h2 class="accordion-header" id="FaqHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#FaqCollapseThree" aria-expanded="false" aria-controls="FaqCollapseThree">
                 Как быстро придёт результат?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="FaqCollapseThree" class="accordion-collapse collapse" aria-labelledby="FaqHeadingThree" data-bs-parent="#FaqAccordionExample">
               <div class="accordion-body">
                 Мы можем с вами проработать все тормозящие аспекты за один или несколько терапевтических сеансов, и вы почувствуете изменения в вашей жизни уже через месяц или ранее, всё зависит от глубины повреждающих установок. Связь со мной для возможных корректировок сохраняется у вас два месяца.
               </div>
@@ -443,7 +559,7 @@
         </div>
       </div>
     </div>
-    <div class="faq__right d-flex justify-content-between align-items-center ">
+    <div class="faq__right d-flex justify-content-between align-items-center">
       <div class="faq__question-box">
         <span class="faq__question">Если остались вопросы</span>
         <span class="faq__advice">Можете их написать, мы вам ответим.</span>
@@ -577,9 +693,9 @@
 </div>
   </main>
   <footer class="footer">
-  <div class="footer__inner d-flex justify-content-between">
-    <span class="footer__right">© 2021. Adil-Zakarin.online. Все права защищены.</span>
-    <a href="#" class="footer__politics">Политика конфиденциальности</a>
+  <div class="footer__inner row justify-content-between">
+    <span class="footer__right col-auto">© 2021. Adil-Zakarin.online. Все права защищены.</span>
+    <a href="#" class="footer__politics col-auto">Политика конфиденциальности</a>
   </div>
 </footer>
 
