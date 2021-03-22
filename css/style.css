@@ -392,16 +392,6 @@ ul {
   height: auto;
 }
 
-.header__cubics {
-  position: absolute;
-  top: 132px;
-  right: 0;
-  z-index: 0;
-  width: 668px;
-  height: auto;
-  opacity: 0.1;
-}
-
 .header__line_bottom {
   position: absolute;
   bottom: 0;
@@ -1512,6 +1502,16 @@ ul {
 
 .form .form-check {
   margin: 20px 0;
+}
+
+.form .form-check a {
+  color: #fff;
+}
+
+.form .form-check a:hover {
+  color: #fff;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 .form .form-check-input {

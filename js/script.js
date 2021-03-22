@@ -25,7 +25,7 @@ var toastSuccess = new bootstrap.Toast(toastHTMLSuccess, {
 
 AOS.init({
   // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
   initClassName: 'aos-init', // class applied after initialization
   animatedClassName: 'aos-animate', // class applied on animation
@@ -116,8 +116,8 @@ const successCol5 = document.querySelector(".succes-col5");
 const successArrow = document.querySelector(".section-cards__success-arrow");
 
 const guranteeCol = document.querySelector('.guarantee__col');
-const sword1 = document.querySelector('.sword1');
-const sword2 = document.querySelector('.sword2');
+const sword1 = document.querySelectorAll('.sword1');
+const sword2 = document.querySelectorAll('.sword2');
 
 function isElementInViewport (el) {
   var rect = el.getBoundingClientRect();
@@ -155,10 +155,14 @@ var successAnimation = onVisibilityChange(successGrafik, function() {
 });
 
 var swordsAnimation = onVisibilityChange(guranteeCol, function() {
-  sword1.style.opacity = '1';
-  sword2.style.opacity = '1';
-  sword1.style.transform = 'translate(0)';
-  sword2.style.transform = 'translate(0)';
+  sword1[0].style.opacity = '1';
+  sword1[1].style.opacity = '1';
+  sword2[0].style.opacity = '1';
+  sword2[1].style.opacity = '1';
+  sword1[0].style.transform = 'translate(0)';
+  sword1[1].style.transform = 'translate(0)';
+  sword2[0].style.transform = 'translate(0)';
+  sword2[1].style.transform = 'translate(0)';
 });
 
 if (window.addEventListener) {
@@ -235,16 +239,18 @@ burgerNavLinks.forEach(function(link) {
 
 // Certificate Zoom
 
-const certificate = document.querySelector(".certificate");
-const certificateMobile = document.querySelector(".certificate-mobile");
+const certificate = document.querySelectorAll(".certificate");
+const certificateMobile = document.querySelectorAll(".certificate-mobile");
 const certificateZoom = document.querySelector(".certificate-zoom__wrapper");
 const  certificateCloseBtn = document.querySelector(".certificate-zoom__wrapper .btn-close");
 const certificateOverlay = document.querySelector(".certificate-zoom__overlay");
 const certificateCloseZone = document.querySelector(".certificate-zoom__close-zone");
 
-certificateMobile.addEventListener('click', certificateZoomIn)
+certificateMobile[0].addEventListener('click', certificateZoomIn)
+certificateMobile[1].addEventListener('click', certificateZoomIn)
 
-certificate.addEventListener('click', certificateZoomIn)
+certificate[0].addEventListener('click', certificateZoomIn)
+certificate[1].addEventListener('click', certificateZoomIn)
 
 certificateCloseBtn.addEventListener('click', certificateZoomOut)
 
