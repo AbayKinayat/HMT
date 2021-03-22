@@ -96,39 +96,7 @@ var sectionCardSlider = new Swiper('.section-cards__right', {
   }
 });
 
-var feedbackSlider = new Swiper('.feedback__slider', {
-  slidesPerView: 'auto',
-  spaceBetween: 30,
-  mousewheel: true,
-  pagination: {
-    el: '.dekstop-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    0: {
-      pagination: {
-        el: '.mobile-pagination',
-        clickable: true,
-      }
-    },
-    551: {
-      pagination: {
-        el: '.dekstop-pagination',
-        clickable: true,
-      }
-    },
-    1920: {
-      pagination: {
-        el: '.dekstop-pagination',
-        clickable: true,
-      }
-    }
-  }
-});
+
 
 // cards and guarantee animation
 
@@ -209,6 +177,52 @@ if (window.addEventListener) {
   attachEvent('onscroll', swordsAnimation);
   attachEvent('onresize', swordsAnimation);
 }
+
+// Fade in YouTube video
+
+const guarantee = $(".guarantee");
+const guaranteeTop = guarantee.offset().top;
+$(window).bind('scroll', function() {
+  const windowTop = $(this).scrollTop();
+  if (guaranteeTop < windowTop) {
+    $("#feedbackSlider").html('<div class="swiper-wrapper"><iframe class="feedback__slider-video swiper-slide" src="https://www.youtube.com/embed/Ier2uHqfdLs?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe class="feedback__slider-video swiper-slide" src="https://www.youtube.com/embed/E-CfvWWd8QQ?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe class="feedback__slider-video swiper-slide" src="https://www.youtube.com/embed/sk6RxU73td4?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe class="feedback__slider-video swiper-slide" src="https://www.youtube.com/embed/7qipo2nCFO0?list=PL1alEhnjIr4Z9rK_lcwB1T8ROZQQsHxkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>')
+    var feedbackSlider = new Swiper('.feedback__slider', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: '.dekstop-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        0: {
+          pagination: {
+            el: '.mobile-pagination',
+            clickable: true,
+          }
+        },
+        551: {
+          pagination: {
+            el: '.dekstop-pagination',
+            clickable: true,
+          }
+        },
+        1920: {
+          pagination: {
+            el: '.dekstop-pagination',
+            clickable: true,
+          }
+        }
+      }
+    });
+    $(window).unbind()
+  }
+
+})
 
 // Accordion target animation
 
@@ -387,13 +401,11 @@ form.addEventListener('submit', function(event) {
 
   toastSuccess.show()
 
-  
-
   $.ajax({
     url: 'telegram.php',
     type: 'POST',
     cache: false,
-    data: {'userName': userName,'userPhone': userPhone, 'userEmail': userEmail,'userMessage': userMessage},
+    data: {'userName': userName.value,'userPhone': userPhone.value, 'userEmail': userEmail.value,'userMessage': userMessage.value},
     dataType: 'html',
     success: function(data) {
         console.log('success')
