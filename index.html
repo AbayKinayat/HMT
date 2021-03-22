@@ -110,8 +110,8 @@
   </div>
   <div class="header__woman-container">
     <picture>
-      <source srcset="img/header/woman.webp" type="image/webp" class="header__woman">
-      <img src="img/header/woman.png" alt="Счастливая женщина" class="header__woman">
+      <source loading="lazy" data-srcset="img/header/woman.webp" type="image/webp" class="header__woman">
+      <img loading="lazy" src="img/header/woman.png" alt="Счастливая женщина" class="header__woman">
     </picture>
   </div>
   <div class="header__line_bottom"></div>
@@ -235,10 +235,8 @@
       </div>
     </div>
     <div class="depression__content_top d-flex justify-content-between align-items-center">
-      <picture>
-        <source data-aos="zoom-in-right" srcset="img/depression/woman.webp" type="image/webp" class="depression__woman-top">
-        <img data-aos="zoom-in-right" src="img/depression/woman.png" alt="Грустная девушка" class="depression__woman-top">
-      </picture>
+      <div class="lazy" data-name="img/depression/woman|.png|Грустная девушка|depression__woman-top"></div>
+      
       <div class="depression__symptom-col">
         <div data-aos="fade-left" data-aos-delay="100" data-aos-easing="linear" data-aos-duration="600"
           class="depression__symptom">
@@ -315,22 +313,13 @@
           </p>
         </div>
       </div>
-      <picture>
-        <source data-aos="zoom-in-left" srcset="img/depression/woman-bottom.webp" type="image/webp" class="depression__woman-bottom">
-        <img data-aos="zoom-in-left" src="img/depression/woman-bottom.svg" alt="Грустная девушка"
-        class="depression__woman-bottom">
-      </picture>
-      
+      <div class="lazy" data-name="img/depression/woman-bottom|.png|Грустная девушка|depression__woman-bottom"></div>
     </div>
   </div>
 </section>
     <section class="section-if">
   <div class="section-if__inner d-flex justify-content-between align-items-center">
-    <picture>
-      <source data-aos="fade-right" data-aos-duration="1000" srcset="img/section-if/woman.webp" type="image/webp" class="section-if__woman">
-      <img data-aos="fade-right" data-aos-duration="1000" src="img/section-if/woman.png" alt="Грустная девушка" class="section-if__woman">
-    </picture>
-    
+    <div class="lazy" data-name="img/section-if/woman|.png|Грустная девушка|section-if__woman"></div>
     <div class="section-if__content">
       <h2 data-aos="fade-left" data-aos-duration="1000" class="section__title">
         Последствия дипрессии
@@ -349,14 +338,14 @@
       <h2 class="section__title">
         О себе
       </h2>
-      <img src="img/about-me/adil.svg" alt="Адиль" class="adil-mobile">
+      <div class="lazy" data-name="img/about-me/adil|.png|Адиль|adil-mobile"></div>
       <p class="about-me__subtitle">
         Меня зовут Адиль, я сертифицированный специалист по реставрации или обновлению вашей жизни. Почему всё не так, как мы хотим? Наш мозг устроен как компьютер который состоит из разных программ и убеждений которые автоматически запускается каждый день когда мы просыпаемся, следовательно старые или негативные программы не приведут вас к желаемой цели.
       </p>
       <div class="certificate-mobile__box">
         <picture>
-          <source class="certificate-mobile" srcset="img/about-me/certificate.webp" type="image/webp">
-          <img src="img/about-me/certificate.png" alt="Сертификат" class="certificate-mobile">
+          <source srcset="img/about-me/Certificate.webp" type="image/webp" class="certificate-mobile">
+          <img src="img/about-me/Certificate.png" alt="Сертификат" class="certificate-mobile">
         </picture>
       </div>
       <p class="about-me__subtitle">
@@ -374,18 +363,12 @@
         <img data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800" src="img/about-me/Certificate.png" alt="Сертификат" class="certificate">
       </picture>
     </div>
-    <picture>
-      <source data-aos="fade-left" srcset="img/about-me/adil.webp" type="image/webp" class="adil">
-      <img data-aos="fade-left" src="img/about-me/adil.png" alt="Адиль" class="adil">
-    </picture>
+    <div class="lazy" data-name="img/about-me/adil|.png|Адиль|adil"></div>
   </div>
 </section>
 <div class="certificate-zoom__wrapper">
   <div class="certificate-zoom__close-zone"></div>
-  <picture>
-    <source srcset="img/about-me/certificate-zoom.webp" type="image/webp" class="certificate-zoom">
-    <img src="img/about-me/certificate-zoom.png" alt="Сертификат" class="certificate-zoom">
-  </picture>
+  <div class="lazy" data-name="img/about-me/certificate-zoom|.png|Сертификат|certificate-zoom"></div>
   <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
   <a href="#certificateTranslate">
     <button class="btn btn-success">Читать на русском</button>
@@ -423,12 +406,9 @@
         <div class="swiper-slide d-flex justify-content-center">
           <div data-aos="fade-up" data-aos-delay="500"  data-aos-anchor-placement="center-bottom" class="section-cards__card">
             <div class="section-cards__card_top">
-              <picture>
-                <source srcset="img/section-cards/cards-img1.webp" type="image/webp" class="section-cards__card_image">
-                <img src="img/section-cards/cards-img1.png" alt="Счастье" class="section-cards__card_image">
-              </picture>
+              <div class="lazy" data-name="img/section-cards/cards-img1|.png|Счастье|section-cards__card_image"></div>
               <a href="#form" class="section-cards__card_circle">
-                <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+                <img  loading="lazy" class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
               </a>
             </div>
             <div class="section-cards__card_bottom">
@@ -444,13 +424,9 @@
         <div class="swiper-slide d-flex justify-content-center">
           <div data-aos="fade-up" data-aos-delay="700"  data-aos-anchor-placement="center-bottom" class="section-cards__card">
             <div class="section-cards__card_top">
-              <picture>
-                <source srcset="img/section-cards/cards-img2.webp" type="image/webp"
-                class="section-cards__card_image"> 
-                <img src="img/section-cards/cards-img2.png" alt="Счастье" class="section-cards__card_image">
-              </picture>
+              <div class="lazy" data-name="img/section-cards/cards-img2|.png|Счастье|section-cards__card_image"></div>
               <a href="#form" class="section-cards__card_circle">
-                <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+                <img loading="lazy" class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
               </a>
             </div>
             <div class="section-cards__card_bottom">
@@ -467,12 +443,9 @@
         <div class="swiper-slide d-flex justify-content-center">
           <div data-aos="fade-up" data-aos-delay="900"  data-aos-anchor-placement="center-bottom" class="section-cards__card">
             <div class="section-cards__card_top">
-              <picture>
-                <source srcset="img/section-cards/cards-img3.webp" type="image/webp" class="section-cards__card_image">
-                <img src="img/section-cards/cards-img3.png" alt="Счастье" class="section-cards__card_image">
-              </picture>
+              <div class="lazy" data-name="img/section-cards/cards-img2|.png|Счастье|section-cards__card_image"></div>
               <a href="#form" class="section-cards__card_circle">
-                <img class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
+                <img loading="lazy" class="section-cards__card_mail" src="img/section-cards/mail.svg" alt="почта">
               </a>
             </div>
             <div class="section-cards__card_bottom">
@@ -500,8 +473,8 @@
     <div class="guarantee__content d-flex justify-content-between align-items-end">
       <div data-aos="zoom-in" class="guarantee__col">
         <div class="guarantee__col_circle flex-column">
-          <img src="img/guarantee/balance-top.svg" alt="весы">
-          <img class="balance-bottom" src="img/guarantee/balance-bottom.svg" alt="весы">
+          <img loading="lazy" src="img/guarantee/balance-top.svg" alt="весы">
+          <img loading="lazy" class="balance-bottom" src="img/guarantee/balance-bottom.svg" alt="весы">
         </div>
         <span class="guarantee__col_title">
           Ваша ответственность
@@ -512,7 +485,7 @@
       </div>
       <div data-aos="zoom-in" class="guarantee__col align-self-start">
         <div class="guarantee__col_circle">
-          <img src="img/guarantee/dollar.svg" alt="доллар">
+          <img loading="lazy" src="img/guarantee/dollar.svg" alt="доллар">
         </div>
         <span class="guarantee__col_title">
           Возврат средств
@@ -523,7 +496,7 @@
       </div>
       <div data-aos="zoom-in" class="guarantee__col">
         <div class="guarantee__col_circle">
-          <img src="img/guarantee/brain.svg" alt="мозг">
+          <img loading="lazy" src="img/guarantee/brain.svg" alt="мозг">
         </div>
         <span class="guarantee__col_title">
           Совесть
@@ -534,12 +507,12 @@
       </div>
       <div class="sword-box">
         <picture>
-          <source srcset="img/guarantee/sword.webp" type="image/webp" class="sword1">
-          <img src="img/guarantee/sword.png" alt="меч" class="sword1">
+          <source loading="lazy" srcset="img/guarantee/sword.webp" type="image/webp" class="sword1">
+          <img loading="lazy" data-src="img/guarantee/sword.png" alt="меч" class="sword1">
         </picture>
         <picture>
-          <source srcset="img/guarantee/sword2.webp" type="image/webp" class="sword2">
-          <img src="img/guarantee/sword2.png" alt="меч" class="sword2">
+          <source loading="lazy" srcset="img/guarantee/sword2.webp" type="image/webp" class="sword2">
+          <img loading="lazy" data-src="img/guarantee/sword2.png" alt="меч" class="sword2">
         </picture>
       </div>
     </div> 
@@ -600,7 +573,7 @@
         <div class="accordion-item__wrapper">
           <div class="accordion-icon-container">
             <div class="accordion-icon-box">
-              <img class="get-money" src="img/faq/get-money.svg" alt="рука помощи">
+              <img loading="lazy" class="get-money" src="img/faq/get-money.svg" alt="рука помощи">
             </div>
           </div>
           <div class="accordion-item">
@@ -620,8 +593,7 @@
         <div class="accordion-item__wrapper">
           <div class="accordion-icon-container">
             <div class="accordion-icon-box">
-              <img class="brain-icon" src="img/faq/brain.svg" alt="ум">
-  
+              <img loading="lazy" class="brain-icon" src="img/faq/brain.svg" alt="ум">
             </div>
           </div>
           <div class="accordion-item">
@@ -640,7 +612,7 @@
         <div class="accordion-item__wrapper">
           <div class="accordion-icon-container">
             <div class="accordion-icon-box">
-              <img class="graph-icon" src="img/faq/graph.svg" alt="график">
+              <img loading="lazy" class="graph-icon" src="img/faq/graph.svg" alt="график">
             </div>
           </div>
           <div class="accordion-item">
@@ -664,12 +636,9 @@
         <span class="faq__advice">Можете их написать, мы вам ответим.</span>
       </div>
       <div class="faq__adil-box">
-        <picture>
-          <source srcset="img/faq/adil-phone.webp" type="image/webp" class="faq__adil">
-          <img src="img/faq/adil-phone.png" alt="Адиль Закарин" class="faq__adil">
-        </picture>
+        <div class="lazy" data-name="img/faq/adil-phone|.png|Адиль Закарин|faq__adil"></div>
         <a href="#form" class="way-to-form_circle">  
-          <img src="img/faq/arrow.svg" alt="Стрелка к форме" class="way-to-form_array">
+          <img loading="lazy" src="img/faq/arrow.svg" alt="Стрелка к форме" class="way-to-form_array">
         </a>
       </div>
     </div>
@@ -709,10 +678,11 @@
         </div>
         <button type="submit" class="btn form__btn">Записаться</button>
       </form>
-      <div class="form__contact">
+      <div class="form__contact"> 
+        <div class="lazy" data-name="img/form/form-bg|.png|Путь|form__contact_bg"></div>
         <picture>
-          <source srcset="img/form/form-bg.webp" type="image/webp" class="form__contact_bg">
-          <img src="img/form/form-bg.jpg" alt="Путь" class="form__contact_bg">
+          <source loading="lazy" srcset="img/form/form-bg.webp" type="image/webp" class="form__contact_bg lazy">
+          <img loading="lazy" data-src="img/form/form-bg.jpg" alt="Путь" class="form__contact_bg lazy">
         </picture>
         <div class="form__contact_gradient"></div>
         <div class="form__contact-content">
@@ -739,7 +709,6 @@
             </div>
             <div class="form-steps__line-box">
               <div class="form-steps__vertical-line">
-
               </div>
             </div>
             <div class="form-step d-flex align-items-center">
@@ -783,10 +752,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 100">
       <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
-          <picture>
-            <source srcset="img/form/adil-message.webp" type="image/webp" class="adil-message-img">
-            <img class="adil-message-img" src="img/form/adil-message.png" alt="Адиль">
-          </picture>
+          <div class="lazy" data-name="img/form/adil-message|.png|Адиль|adil-message-img"></div>
           <strong class="adil-message-title me-auto">Zakarin Adil</strong>
           <small class="adil-message-time">1 sec ago</small>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -807,6 +773,9 @@
   </div>
 </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

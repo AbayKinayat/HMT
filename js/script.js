@@ -21,6 +21,30 @@ var toastSuccess = new bootstrap.Toast(toastHTMLSuccess, {
   autohide: true
 });
 
+// Lazy Load Jquery Init
+
+function lazy_load(){
+  $('.lazy').each(function(img){
+      var scrollTop = window.pageYOffset;
+      var this_offset=$(this).offset().top + $(this).outerHeight();
+      var window_offset=$(window).scrollTop()+ $(window).height();
+      if($(this).offset().top + $(this).outerHeight() <= ($(window).scrollTop() + $(window).height() + 250)){
+          var path_src=$(this).attr('data-name');
+          var split_data = path_src.split('|');
+          var img_html='<picture>'+
+              '<source srcset="'+split_data[0]+'.webp" type="image/webp">'+
+              '<img src="'+split_data[0]+split_data[1]+'" alt="'+split_data[2]+'" class="'+split_data[3]+'">'+
+              '</picture>';
+          $(this).html(img_html);
+          $(this).show(1000);
+          $(this).removeClass('lazy');
+      }
+  });
+}
+$(window).on('resize scroll load ready', function(){
+  lazy_load();
+});
+ 
 // AOS Initial
 
 AOS.init({
@@ -50,6 +74,7 @@ AOS.init({
 var sectionCardSlider = new Swiper('.section-cards__right', {
   slidesPerView: 3,
   spaceBetween: 30,
+  grabCursor: true,
   breakpoints: {
     0: {
       slidesPerView: 1,
